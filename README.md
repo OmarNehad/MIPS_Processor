@@ -1,5 +1,5 @@
 # Subset of the MIPS ISA Processor with I/O
-In this project I made a CPU that implements a subset of the MIPS ISA, as specified in the famous Onur Mutlu “Digital Design & Computer Architecture” course labs 2020 edition.
+In this project I made a processor that implements a subset of the MIPS ISA in Xilinix Vivado using Verilog, as specified in the famous Onur Mutlu “Digital Design & Computer Architecture” course labs 2020 edition.
 ## Processor overview
 This is the processor overview as outlined by the course and the reference textbook. The processor was later developed to realize additional instructions and include signals that help in debugging.
 
