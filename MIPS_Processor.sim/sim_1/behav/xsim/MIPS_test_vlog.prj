@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/ALU.v" \
+"../../../../MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/ControlUnit.v" \
+"../../../../MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/DataMemory.v" \
+"../../../../MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v" \
+"../../../../MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/MIPS.v" \
+"../../../../MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/RegisterFile.v" \
+"../../../../MIPS_Processor.srcs/sources_1/imports/Lab9_student/reg_half_synthmodel.v" \
+"../../../../MIPS_Processor.srcs/sim_1/imports/Onur-labs/Lab9_student/MIPS_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

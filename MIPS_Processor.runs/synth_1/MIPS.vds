@@ -1,0 +1,558 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Nov 28 12:21:46 2023
+# Process ID: 14052
+# Current directory: O:/Dev/MIPS_Processor/MIPS_Processor.runs/synth_1
+# Command line: vivado.exe -log MIPS.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MIPS.tcl
+# Log file: O:/Dev/MIPS_Processor/MIPS_Processor.runs/synth_1/MIPS.vds
+# Journal file: O:/Dev/MIPS_Processor/MIPS_Processor.runs/synth_1\vivado.jou
+# Running On: LAPTOP-T734KNHR, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16542 MB
+#-----------------------------------------------------------
+source MIPS.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 454.273 ; gain = 159.605
+Command: read_checkpoint -auto_incremental -incremental O:/Dev/MIPS_Processor/MIPS_Processor.srcs/utils_1/imports/synth_1/MIPS.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from O:/Dev/MIPS_Processor/MIPS_Processor.srcs/utils_1/imports/synth_1/MIPS.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top MIPS -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17896
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1271.324 ; gain = 410.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MIPS' [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/MIPS.v:21]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:21]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'insmem_h.txt'; please make sure the file is added to project and has read permission, ignoring [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (0#1) [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:21]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/RegisterFile.v:21]
+INFO: [Synth 8-6157] synthesizing module 'reg_half' [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Lab9_student/reg_half_synthmodel.v:15]
+INFO: [Synth 8-6157] synthesizing module 'reg_half_dist_mem_gen_v4_1_xst_1' [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Lab9_student/reg_half_synthmodel.v:73]
+INFO: [Synth 8-6157] synthesizing module 'GND' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:40127]
+INFO: [Synth 8-6155] done synthesizing module 'GND' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:40127]
+INFO: [Synth 8-6157] synthesizing module 'RAM32X1D' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:123901]
+INFO: [Synth 8-6155] done synthesizing module 'RAM32X1D' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:123901]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79502]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79502]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39148]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:39148]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79464]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79464]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79464]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79464]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:135864]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:135864]
+INFO: [Synth 8-6155] done synthesizing module 'reg_half_dist_mem_gen_v4_1_xst_1' (0#1) [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Lab9_student/reg_half_synthmodel.v:73]
+WARNING: [Synth 8-7071] port 'qspo' of module 'reg_half_dist_mem_gen_v4_1_xst_1' is unconnected for instance 'BU2' [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Lab9_student/reg_half_synthmodel.v:50]
+WARNING: [Synth 8-7071] port 'qdpo' of module 'reg_half_dist_mem_gen_v4_1_xst_1' is unconnected for instance 'BU2' [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Lab9_student/reg_half_synthmodel.v:50]
+WARNING: [Synth 8-7023] instance 'BU2' of module 'reg_half_dist_mem_gen_v4_1_xst_1' has 18 connections declared, but only 16 given [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Lab9_student/reg_half_synthmodel.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'reg_half' (0#1) [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Lab9_student/reg_half_synthmodel.v:15]
+WARNING: [Synth 8-7071] port 'spo' of module 'reg_half' is unconnected for instance 'i_portA' [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/RegisterFile.v:39]
+WARNING: [Synth 8-7023] instance 'i_portA' of module 'reg_half' has 7 connections declared, but only 6 given [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/RegisterFile.v:39]
+WARNING: [Synth 8-7071] port 'spo' of module 'reg_half' is unconnected for instance 'i_portB' [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/RegisterFile.v:47]
+WARNING: [Synth 8-7023] instance 'i_portB' of module 'reg_half' has 7 connections declared, but only 6 given [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/RegisterFile.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (0#1) [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/RegisterFile.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/ALU.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/ALU.v:21]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/DataMemory.v:21]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'datamem_h.txt'; please make sure the file is added to project and has read permission, ignoring [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/DataMemory.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (0#1) [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/DataMemory.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/ControlUnit.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (0#1) [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/ControlUnit.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'MIPS' (0#1) [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/MIPS.v:21]
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-3848] Net InsArr in module/entity InstructionMemory does not have driver. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/sources_1/imports/Onur-labs/Lab9_student/InstructionMemory.v:26]
+WARNING: [Synth 8-7129] Port qspo_srst in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo_rst in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo_srst in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo_clk in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo_ce in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo_rst in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ce in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo_ce in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spra[4] in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spra[3] in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spra[2] in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spra[1] in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spra[0] in module reg_half_dist_mem_gen_v4_1_xst_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1366.664 ; gain = 506.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1366.664 ; gain = 506.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1366.664 ; gain = 506.336
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1366.664 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 128 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'FPGACLK'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'FPGACLK'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'FPGACLK'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:4]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports FPGACLK]'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:4]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SPEED[0]'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SPEED[1]'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SPEED'. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [O:/Dev/MIPS_Processor/MIPS_Processor.srcs/constrs_1/imports/lab8_student_vivado/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MIPS_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MIPS_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1418.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 128 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1418.871 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint O:/Dev/MIPS_Processor/MIPS_Processor.srcs/utils_1/imports/synth_1/MIPS.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 10    
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP i_alu/lo0, operation Mode is: A*B.
+DSP Report: operator i_alu/lo0 is absorbed into DSP i_alu/lo0.
+DSP Report: operator i_alu/lo0 is absorbed into DSP i_alu/lo0.
+DSP Report: Generating DSP i_alu/lo0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator i_alu/lo0 is absorbed into DSP i_alu/lo0.
+DSP Report: operator i_alu/lo0 is absorbed into DSP i_alu/lo0.
+DSP Report: Generating DSP i_alu/lo0, operation Mode is: A*B.
+DSP Report: operator i_alu/lo0 is absorbed into DSP i_alu/lo0.
+DSP Report: operator i_alu/lo0 is absorbed into DSP i_alu/lo0.
+DSP Report: Generating DSP i_alu/lo0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator i_alu/lo0 is absorbed into DSP i_alu/lo0.
+DSP Report: operator i_alu/lo0 is absorbed into DSP i_alu/lo0.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_0) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_1) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_10) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_11) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_12) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_13) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_14) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_15) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_16) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_17) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_18) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_19) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_2) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_20) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_21) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_22) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_23) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_24) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_25) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_26) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_27) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_28) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_29) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_3) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_30) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_31) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_4) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_5) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_6) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_7) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_8) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_9) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_0) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_1) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_10) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_11) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_12) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_13) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_14) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_15) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_16) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_17) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_18) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_19) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_2) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_20) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_21) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_22) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_23) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_24) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_25) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_26) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_27) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_28) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_29) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_3) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_30) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_31) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_4) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_5) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_6) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_7) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_8) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portA/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_9) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_0) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_1) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_10) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_11) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_12) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_13) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_14) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_15) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_16) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_17) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_18) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_19) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_2) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_20) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_21) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_22) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_23) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_24) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_25) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_26) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_27) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_28) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_29) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_3) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_30) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_31) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_4) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_5) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_6) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_7) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_8) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qdpo_int_9) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_0) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_1) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_10) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (i_regf/i_portB/BU2/U0/gen_dp_ram.dpram_inst/qspo_int_11) is unused and will be removed from module MIPS.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MIPS        | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MIPS        | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MIPS        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MIPS        | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     1|
+|4     |FDCE   |    19|
+|5     |FDPE   |    11|
+|6     |IBUF   |     2|
+|7     |OBUF   |   101|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1418.871 ; gain = 558.543
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 321 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1418.871 ; gain = 506.336
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1418.871 ; gain = 558.543
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1418.871 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1418.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 4482e640
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 205 Warnings, 22 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1418.871 ; gain = 939.758
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'O:/Dev/MIPS_Processor/MIPS_Processor.runs/synth_1/MIPS.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MIPS_utilization_synth.rpt -pb MIPS_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 28 12:22:25 2023...
